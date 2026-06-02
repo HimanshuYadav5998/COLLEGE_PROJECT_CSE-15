@@ -1,16 +1,28 @@
-# React + Vite
+# Full-Stack Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built a full-stack Netflix clone featuring user registration, a responsive homepage, and a robust backend designed to track user streaming activity and log view counts for specific movies.
 
-Currently, two official plugins are available:
+## 📁 Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Frontend (React/Vite)
+The user interface is built using React, handling routing, user authentication views, and media browsing.
 
-## React Compiler
+```text
+Netflix-clone/
+└── src/
+    ├── App.jsx
+    ├── App.css
+    ├── Browse.jsx
+    ├── Register.jsx
+    ├── main.jsx
+    └── index.css
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend (Spring Boot)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+Demo/
+└── src/main/java/com/example/demo/
+    ├── DemoApplication.java  # Main application entry point
+    ├── MovieClick.java       # Entity model for tracking movie data
+    ├── ClickRepository.java  # Repository interface for database queries
+    └── StatsController.java  # REST API controller for handling analytics endpoints
