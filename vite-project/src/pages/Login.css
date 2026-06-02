@@ -1,0 +1,270 @@
+/* --- REGISTRATION PAGE STYLES --- */
+
+.register-container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+                url('https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4%;
+    align-items: center;
+}
+
+.logo {
+    color: #E50914;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+/* Use Montserrat for auth page branding */
+.logo, .auth-brand {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.sign-in-btn {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sign-in-btn:hover {
+    background-color: #f40612;
+}
+
+.register-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+    min-height: calc(100vh - 120px);
+}
+
+.register-content h1 {
+    max-width: 560px;
+}
+
+.email-form.first-stage {
+    max-width: 720px;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 4%;
+}
+
+.auth-brand {
+    color: #E50914;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.auth-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.lang-select {
+    background: transparent;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.auth-body {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 4%;
+}
+
+.hero-copy {
+    flex: 2;
+    color: white;
+}
+
+.auth-card {
+    flex: 1;
+    background: rgba(24,24,24,0.9);
+    padding: 1.25rem;
+    border-radius: 8px;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #333;
+    color: white;
+}
+
+.auth-button {
+    width: 100%;
+    background: #E50914;
+    border: none;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.trending-strip { display:flex; gap:8px; overflow:hidden; }
+.trending-item { width:72px; text-align:center }
+.trending-item img { width:100%; height:100px; object-fit:cover; border-radius:6px }
+.trending-title { font-size:0.75rem; margin-top:6px; color:#ddd }
+
+.faq details { background: rgba(0,0,0,0.2); padding:8px; margin-top:8px; border-radius:4px }
+.more-reasons ul { margin-top:8px; color:#ddd }
+
+.register-content h1 {
+    font-size: 3.5rem;
+    max-width: 800px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.register-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.register-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.email-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 720px;
+    margin-top: 2rem;
+}
+
+.email-form.first-stage {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+}
+
+.email-form input,
+.email-form select {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.email-form select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #fff 50%),
+                      linear-gradient(135deg, #fff 50%, transparent 50%),
+                      linear-gradient(to right, rgba(255,255,255,0.15), rgba(255,255,255,0.15));
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 1px 100%;
+    background-repeat: no-repeat;
+}
+
+.get-started-btn {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+}
+
+.email-form:not(.first-stage) .get-started-btn {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.get-started-btn:hover {
+    background-color: #f40612;
+}
+
+.login-error {
+    margin-top: 1.25rem;
+    max-width: 700px;
+    color: #ffd3d3;
+    font-size: 0.95rem;
+    background: rgba(229, 9, 20, 0.12);
+    border: 1px solid rgba(229, 9, 20, 0.3);
+    padding: 1rem 1.1rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .register-header {
+        padding: 15px 4%;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .register-content h1 {
+        font-size: 2rem;
+    }
+    .register-content h2 {
+        font-size: 1.2rem;
+    }
+    .email-form {
+        grid-template-columns: 1fr;
+    }
+    .email-form input,
+    .email-form select,
+    .get-started-btn {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Removed two-step/auth variant styles to restore original layout */
